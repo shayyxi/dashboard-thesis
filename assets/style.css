@@ -1,0 +1,120 @@
+.Main-background{
+    background-color: #DBDBDB;
+    height: auto;
+    width: 100%;
+}
+.header{
+    height: 40px;
+    background-color: #00868B;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+    letter-spacing: 0.8px;
+    color: white;
+}
+.div-1{
+    background-color: white;
+    border-radius: 8px;
+    margin: 15px 5px 10px 15px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.div-2{
+    background-color: white;
+    border-radius: 8px;
+    margin: 15px 15px 10px 5px;
+    padding: 10px;
+}
+.rc-slider-track {
+  background-color: #008B8B;
+}
+
+.rc-slider-dot-active {
+  border-color: #008B8B;
+  border: solid 2px #008B8B;
+}
+
+.rc-slider-handle {
+  background-color: #008B8B;
+  border-color: #008B8B;
+}
+
+.rc.slider-handle:hover {
+  border-color: #008B8B;
+}
+
+.rc.slider-handle-active:active {
+  border-color: red;
+}
+.heading{
+    font-weight: bold;
+    font-size: 18px;
+    color: grey;
+    padding: 15px 5px 5px 15px;
+}
+.score-div{
+    width: 65%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #00868B;
+    box-shadow: 5px 10px 8px #888888;
+}
+#collapse-button{
+    background-color: #00868B;
+    outline: #458B74 auto 5px;
+    width: 25%;
+    margin: 15px;
+    padding: 8px;
+}
+
+.text-btn{
+    font-size: 14px;
+    font-weight: bold;
+}
+.bottom-plots{
+    height: 500px;
+    margin: 5px 15px 5px 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+#collapse-button-2{
+    background-color: #00868B;
+    outline: #458B74 auto 5px;
+    width: 8%;
+    margin: 15px;
+    padding: 8px;
+}
+#collapse-button-3{
+    background-color: #00868B;
+    outline: #458B74 auto 5px;
+    width: 25%;
+    margin: 15px;
+    padding: 8px;
+}
+#collapse-button-4{
+    background-color: #00868B;
+    outline: #458B74 auto 5px;
+    width: 8%;
+    margin: 15px;
+    padding: 8px;
+}
+.information-div{
+    background-color: white;
+    border-radius: 8px;
+    margin: 5px 15px 5px 15px;
+}
+.space-div{
+    height: 20px;
+    background-color: #00868B;
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 5px;
+    letter-spacing: 0.8px;
+    color: white;
+}
