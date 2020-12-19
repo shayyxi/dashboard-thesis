@@ -1,0 +1,6 @@
+version: '3'
+services:
+  dashboard:
+    build: .
+    ports:
+      - '80:8050'
