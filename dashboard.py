@@ -686,4 +686,4 @@ def update_prediction(X1, X2, X3):
     return "Predicted Score G2: {}".format(round(prediction,1))
 
 if __name__ == '__main__':
-    app.run_server(port=8000, host='0.0.0.0')
+    app.run_server(port=8050, host='0.0.0.0')
