@@ -1,6 +1,11 @@
 - hosts: all
   tasks:
-      
+
+  - name: copy all files
+    copy:
+      src: .
+      dest: .
+          
   - name: Stop the running container
     command: docker stop ec2-user_dashboard_1
     ignore_errors: true
