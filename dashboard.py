@@ -157,7 +157,7 @@ slider_6_max = round(df[slider_6_label].max())
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = html.Div([
-    html.Div('DashBoard', className='header'),
+    html.Div("DashBoard of students' dataset", className='header'),
 
     html.Div([
         dbc.Row([
