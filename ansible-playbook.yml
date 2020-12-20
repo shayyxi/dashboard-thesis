@@ -15,4 +15,4 @@
     ignore_errors: true
     
   - name: Create and start the container using docker-compose
-    command: docker-compose up -d
+    command: docker-compose up -d --build
