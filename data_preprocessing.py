@@ -28,7 +28,7 @@ def check_missing_data(df):
     df_with_NaN = df[NaN_rows]
     df_with_NaN.shape[0]
     if(df_with_NaN.shape[0] != 0):
-        missing_data = True
+        raise Exception("Sorry, some data is missing!")
     return missing_data
 
 # To get number of rows
