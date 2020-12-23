@@ -9,6 +9,8 @@ from plotly.subplots import make_subplots
 
 # Display boxplots of numeric values
 def feature_importance_chart(df_feature_importances):
+    if type(df_feature_importances).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig_features_importance = go.Figure()
     fig_features_importance.add_trace(go.Bar(x=df_feature_importances.index,
                                              y=df_feature_importances["Importance"]
@@ -23,6 +25,8 @@ def feature_importance_chart(df_feature_importances):
 
 # Correlation heatmap of the whole dataframe
 def correlation_heatmap(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     c=df.corr()
     fig = go.Figure(data=go.Heatmap(z=c.values,
                                x=['age','Medu','Fedu','traveltime','studytime','failures','famrel','freetime','goout',
@@ -81,6 +85,8 @@ def distribution_school_column(df):
 
 # Distribution of 'sex', 'mjob', 'school'
 def distribution_sex_mjob_school(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Sex", "School", "Mother job"))
@@ -123,6 +129,8 @@ def distribution_medu_column(df):
 
 # Distribution of 'address', 'pstatus', 'medu'
 def distribution_address_pstatus_medu(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Address", "Parents status", "Mother education"))
@@ -166,6 +174,8 @@ def distribution_guardian_column(df):
 
 # Distribution of 'Guardian', 'Fjob', 'Fedu'
 def distribution_guardian_fjob_fedu(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Guardian", "Father job", "Father education"))
@@ -208,6 +218,8 @@ def distribution_reason_column(df):
 
 # Distribution of 'Famsize', 'Famrel', 'Reason'
 def distribution_famsize_famrel_reason(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Family Size", "Family Relations", "Reason to choose this school"))
@@ -251,6 +263,8 @@ def distribution_schoolsup_column(df):
 
 # Distribution of 'traveltime', 'studytime', 'schoolsup'
 def distribution_traveltime_studytime_schoolsup(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Travel Time", "Study Time", "Extra educational school Support"))
@@ -293,6 +307,8 @@ def distribution_paidclass_column(df):
 
 # Distribution of 'famsup', 'activities', 'paidclass'
 def distribution_famsup_activities_paidclass(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Family Support", "Activities", "Paid Class"))
@@ -336,6 +352,8 @@ def distribution_higher_column(df):
 
 # Distribution of 'internet', 'nursery', 'higher'
 def distribution_internet_nursery_higher(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Internet at home", "Attended nursery", "Interested in higher education"))
@@ -379,6 +397,8 @@ def distribution_goout_column(df):
 
 # Distribution of 'romantic', 'freetime', 'goout'
 def distribution_romantic_freetime_goout(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("In a romantic relationship", "Freetime after school", "Going out with friends"))
@@ -422,6 +442,8 @@ def distribution_health_column(df):
 
 # Distribution of 'walc', 'dalc', 'health'
 def distribution_walc_dalc_health(df):
+    if type(df).__name__ != "DataFrame":
+        raise Exception("Sorry, it is not dataframe!")
     fig = make_subplots(
     rows=1, cols=3,
     subplot_titles=("Weekend alcohol consumption", "Workday alcohol consumption", "Current health status"))
