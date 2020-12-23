@@ -9,7 +9,6 @@ from plotly.subplots import make_subplots
 
 # Display boxplots of numeric values
 def feature_importance_chart(df_feature_importances):
-    fig_features_importance=go.Figure()
     fig_features_importance = go.Figure()
     fig_features_importance.add_trace(go.Bar(x=df_feature_importances.index,
                                              y=df_feature_importances["Importance"]
