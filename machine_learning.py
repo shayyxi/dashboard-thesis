@@ -27,7 +27,7 @@ def random_forest_regressor_g3(df):
     return regressor, test_set_r2
 
 
-def multivariate_linear_regression(df,predict):
+def multivariate_linear_regression(df):
     col_names = ["Mjob","school","sex","Pstatus","address","famsize"]
     df = label_encoding(df,col_names)
     x = df.loc[:,["Mjob","Fedu","school","sex","Medu","age","Pstatus","address","famsize","G1","G2"]].values
@@ -36,10 +36,9 @@ def multivariate_linear_regression(df,predict):
     X_train, X_test, y_train, y_test = train_test_split(x, y1, test_size=0.1, random_state=0)
     lin_reg_mod = LinearRegression()
     lin_reg_mod.fit(X_train, y_train)
-    predicted_values = lin_reg_mod.predict(predict)
     y_pred = lin_reg_mod.predict(X_test)
     test_set_r2 = r2_score(y_test, y_pred)
-    return predicted_values, test_set_r2
+    return lin_reg_mod, test_set_r2
 
 
 def random_forest_regressor_g2(df):
